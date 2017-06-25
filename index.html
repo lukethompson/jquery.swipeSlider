@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jquery.swipeSlider</title>
+		<link rel="stylesheet" href="demoStyles.css" />
+
+		<link rel="stylesheet" href="jquery.swipeSlider.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="jquery.swipeSlider.js"></script>
+		<script>
+			$(document).ready(function() {
+				var options = {
+					// animationDuration: 300,
+					// autoReverse: false,
+					// autoTransitionDuration: false, // in ms
+					// bounce: true,
+					// drag: true,
+					// infinite: false,
+					// onSlideStartCallback: function() {},
+					// onSlideCompleteCallback: function() {},
+					// onMoveCallback: function() {},
+					// onStartCallback: function() {},
+					// startIndex: 0
+				}
+
+				var slider = $('#slider').swipeSlider(options);
+
+				$('.next').on('click', function() {
+					slider.swipeSlider('slideNext');
+				});
+
+				$('.previous').on('click', function() {
+					slider.swipeSlider('slidePrevious');
+				});
+			});
+		</script>
+		<style>
+			body { font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+			body > div { margin: 0 auto; max-width: 800px; width: 100%; }
+			#slider { border: 1px solid #f3f3f3; height: 400px; }
+		</style>
+	</head>
+	<body>
+		<div>
+			<h1>jQuery swipeSlider</h1>
+			<p>jQuery content slider with touch support.</p>
+			<div id="slider">
+				<div>
+					<div style="background:#f0f0f0;">
+
+					</div>
+					<div style="background:#ccc;">
+
+					</div>
+					<div style="background:#efefef;">
+
+					</div>
+				</div>
+			</div>
+			<a href="#" class="previous">Previous</a>
+			<a href="#" class="next">Next</a>
+		</div>
+	</body>
+</html>
