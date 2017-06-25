@@ -1,5 +1,5 @@
 # jquery.swipeSlider
-jQuery content slider with touch support.
+jQuery content slider with touch support. [Demo](https://lukethompson.github.io/jquery.swipeSlider/)
 
 
 ## Installation
@@ -13,12 +13,11 @@ To install copy the javascript and stylesheet files into your project and add th
 ```
 
 ## Example
-
+JavaScript
 ```
 $('#.slider').swipeSlider();
-
 ```
-
+HTML Element
 ```
 <div id="slider">
   <div>
